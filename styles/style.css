@@ -1,0 +1,50 @@
+h1 {
+    /* Selector de Etiqueta */
+    background-color: blue;
+    
+}
+
+.titulo.especial { /* Selector de etiqueta y clase */
+    background-color: yellow;
+
+}
+
+.titulo {
+    /* Selector de clase */
+    background-color: red;
+    
+}
+
+#despedida {
+    /* Selector de id */
+    background-color: green;
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+
+* {
+    /* Selector universal */
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Flexbox básico */
+
+.flex-container { /* Recuerden que, para hacer flexbox, las propiedades se le aplican al padre (hay algunas propiedades que se aplican al hijo, pueden investigarlo. Una básica es la propiedad "flex") */
+    border: 3px solid red;
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    display: flex; /* Aplico flex al padre */
+    flex-direction: row; /* Defino la orientación (por defecto es row) */
+    align-items: center; /* Alineo los elementos en el eje vertical (centrado) */
+    justify-content: center; /* Alineo los elementos en el eje horizontal (centrado) */
+}
+
+.flex-hijo{ /* El elemento hijo no tiene propiedades flex pero se centra porque tiene un padre flex */
+    width: 100px;
+    height: 100px;
+    border: 3px solid green;
+}
